@@ -20,6 +20,7 @@ function onFormSubmit(event) {
 
     if (mail === '' || password === '') {
         alert('You forgot something!');
+        return
     }
 
     console.log({ mail, password });
