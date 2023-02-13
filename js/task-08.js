@@ -18,10 +18,12 @@ function onFormSubmit(event) {
     const mail = formElements.email.value;
     const password = formElements.password.value;
 
+
     if (mail === '' || password === '') {
         alert('You forgot something!');
         return
     }
 
     console.log({ mail, password });
+    event.currentTarget.reset();
 };
